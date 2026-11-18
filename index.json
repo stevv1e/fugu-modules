@@ -1,0 +1,21 @@
+{
+  "format": "fugu-modules/1",
+  "modules": [
+    {
+      "id": "text-tools",
+      "path": "modules/text-tools",
+      "name": "Text Tools",
+      "description": "Преобразование текста, подсчёт слов и локальный черновик в изолированном хранилище.",
+      "version": "1.0.0",
+      "category": "UI"
+    },
+    {
+      "id": "github-rate-limit",
+      "path": "modules/github-rate-limit",
+      "name": "GitHub Rate Limit",
+      "description": "Проверка лимита публичного GitHub API через разрешённый HTTPS-запрос без токена.",
+      "version": "1.0.0",
+      "category": "Сеть"
+    }
+  ]
+}

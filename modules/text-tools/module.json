@@ -1,0 +1,14 @@
+{
+  "format": "fugu-module/1",
+  "id": "text-tools",
+  "name": "Text Tools",
+  "version": "1.0.0",
+  "description": "Преобразование текста, подсчёт слов и локальный черновик в изолированном хранилище.",
+  "entry": "dist/module.js",
+  "sha256": "496f1e87d6e5b13a529f914036e66cf304cdab0b85706d7e0e86e6069beb2d65",
+  "min_app": "0.1.0",
+  "permissions": {
+    "storage": true,
+    "network": []
+  }
+}

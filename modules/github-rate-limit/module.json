@@ -1,0 +1,14 @@
+{
+  "format": "fugu-module/1",
+  "id": "github-rate-limit",
+  "name": "GitHub Rate Limit",
+  "version": "1.0.0",
+  "description": "Проверка лимита публичного GitHub API через разрешённый HTTPS-запрос без токена.",
+  "entry": "dist/module.js",
+  "sha256": "4ddf1eaf034b5482c7f2c96b1cf42f46fb6a7f3f233e382a6fe93ae0c8ac2803",
+  "min_app": "0.1.0",
+  "permissions": {
+    "storage": false,
+    "network": ["api.github.com"]
+  }
+}
