@@ -2,7 +2,9 @@
 
 Официальный каталог модулей для Fugu Deck на Android и Windows.
 
-Приложение загружает `index.json` по конкретному commit, затем читает `module.json` и JS entry модуля. SHA-256 entry обязан совпасть с манифестом. Обновления устанавливаются вручную.
+Приложение загружает `index.json` по конкретному commit, проверяет подпись Ed25519 из `index.sig` закреплённым публичным ключом, затем читает `module.json` и JS entry модуля. SHA-256 entry обязан совпасть с манифестом. Обновления устанавливаются вручную.
+
+После изменения `index.json` подпись пересоздаётся из checkout `fugu-deck-app/mobile`: `FUGU_MODULES_SIGNING_KEY_FILE=/путь/к/ключу node scripts/sign-module-catalog.mjs /путь/к/fugu-modules/index.json`. Приватный ключ не хранится в Git; публичный ключ каталога закреплён в приложении.
 
 ## Эталонные модули
 
